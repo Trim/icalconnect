@@ -24,14 +24,23 @@ DEFINES += APP_NAME="$$APP_NAME"
 APP_UNIX_NAME = IcalConnect
 DEFINES += APP_UNIX_NAME="$$APP_UNIX_NAME"
 
-SOURCES += main.cpp\
-	icalconnect.cpp \
-    filepicker.cpp
+SOURCES += src/main.cpp\
+	src/icalconnect.cpp \
+	src/filepicker.cpp \
+	src/editserver.cpp \
+	src/serversettings.cpp \
+	src/icalserver.cpp
 
-HEADERS  += icalconnect.h \
-    filepicker.h
+HEADERS  += src/icalconnect.h \
+	src/filepicker.h \
+	src/editserver.h \
+	src/serversettings.h \
+	src/icalserver.h
 
-FORMS    += icalconnect.ui
+
+FORMS    += ui/icalconnect.ui \
+	ui/serversettings.ui \
+	ui/editserver.ui
 
 ## Package information (used for qbuild packages)
 #pkg [
